@@ -1,0 +1,16 @@
+spring.application.name=commerce-api
+
+# R2DBC PostgreSQL Configuration
+spring.r2dbc.url=
+spring.r2dbc.username=
+spring.r2dbc.password=
+
+# Logging SQL (útil para desenvolvimento)
+logging.level.org.springframework.r2dbc=DEBUG
+
+# SQL Initialization
+spring.sql.init.mode=always
+spring.r2dbc.initialization-mode=always
+spring.sql.init.schema-locations=classpath:schema.sql
+spring.sql.init.data-locations=classpath:data.sql
+spring.sql.init.platform=postgresql
